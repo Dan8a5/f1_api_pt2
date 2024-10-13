@@ -1,0 +1,212 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/f123.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ffffff;
+}
+header {
+    background-color: rgba(239, 13, 13, 0.9);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+nav ul li a:hover, nav ul li a.active {
+    color: #ffcc00;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    color: #fafaf7;
+    text-align: center;
+    font-size: 3.0em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.f1-emoji {
+    font-size: 1.0em;
+    vertical-align: middle;
+}
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#question {
+    width: 70%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+#askButton {
+    padding: 12px 20px;
+    background-color: #f5e109;
+    color: #111111;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+#askButton:hover {
+    background-color: #d00000;
+}
+#response {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+footer {
+    background-color: rgba(237, 13, 13, 0.9);
+    color: #060505;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+/* Contact form styles */
+.contact-form-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+.contact-form button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #ffe600;
+    color: #0b0b0b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #d00000;
+}
+#responseMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        margin: 10px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #question, #askButton {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .contact-form-container {
+        max-width: 90%;
+    }
+}
+
+/* New styles for the F1 link */
+.f1-link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.f1-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Additional footer styles to ensure link visibility */
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 5px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 API - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the Formula 1 API <span class="f1-emoji">🏎️💨</span></h1>
+        <div class="search-container">
+            <input type="text" id="question" placeholder="Ask a question about the 2023 season..." required>
+            <button id="askButton">Ask Away</button>
+        </div>
+        <div id="response"></div>
+    </main>
+    <footer>
+        <p>&copy; Formula 1 API! 🏎️💨</p>
+        <p>For comprehensive race data, visit the 
+            <a href="https://www.formula1.com/en/results/1950/races/94/great-britain/race-result" target="_blank" rel="noopener noreferrer" class="f1-link">
+                Official F1 Website with all past race results
+            </a>
+        </p>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
